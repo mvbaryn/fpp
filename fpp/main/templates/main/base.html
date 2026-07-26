@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Shop{% endblock title %}</title>
+    <link rel="stylesheet" href="/fpp/main/static/css/base.css">
+</head>
+<body>
+    <div class="welcome">
+        <header class="header">
+            <div class="logo"></div>
+            <div class="nav">
+                <div class="nav_list">
+                    <li class="nav_item"></li>
+                    <li class="nav_item"></li>
+                    <li class="nav_item"></li>
+                    <li class="nav_item"></li>
+                    <li class="nav_item"></li>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="main_container">
+        {% block content %}
+            
+        {% endblock content %}
+    </div>
+    <footer class="footer">
+        <div class="row">
+            <h5>Contacts</h5>
+            <p>Email: some@email.com<br>Phone: +7 (123) 456-78-90</p>
+        </div>
+        <div class="social_media">
+            <h5>Our social media</h5>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+        </div>
+    </footer>
+</body>
+</html>
